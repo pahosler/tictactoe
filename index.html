@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Tic Tac Toe</title>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- local stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- local javascripts -->
+</head>
+
+<body onload="board.init()">
+  <body>
+  <div id="title">
+    <h1> Tic Tac Toe </h1>
+    <hr/>
+  </div>
+
+  <div id="game">
+    <canvas id="tictactoe" width="360" height="360"></canvas>
+    <div>
+      <img id="xo" src="images/x.gif">
+      <p id="results"><span id=message>Let's Play!</span></p>
+
+    </div>
+        <div id="slider1">
+          <table id="settings"><tr><td id="aichoice">
+          <span id="easy">AI</span>
+        </td>
+        <td id="buttons">
+          <label class="switch">
+          <input id="AI" type="checkbox" checked>
+          <div class="slider round"></div>
+        </label>
+        </td>
+        <td id="playerchoice">
+          <span id="ox">X</span>
+        </td>
+        <td id="buttons">
+          <label class="switch">
+          <input id="player" type="checkbox">
+          <div class="slider round"></div>
+        </label>
+        </td>
+        </tr>
+    </div>
+    </table>
+    <div id="reset"><button class="button" id="resetButton">RESET</button></div>
+  </div>
+
+</body>
+<script src="js/tictactoe.js"></script>
+</html>

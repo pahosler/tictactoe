@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+
+body {
+  background-color: lightgreen;
+}
+
+#title {
+  font-family: Pangolin,cursive;
+  text-align: center;
+  margin: auto;
+  color: #ff5555
+}
+
+canvas {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+}
+
+hr {
+  width: 80%;
+}
+
+#xo {
+  position: absolute;
+  left: -20px;
+  top: 420px;
+}
+
+#game {
+  height: 385px;
+  width: 385px;
+  position: relative;
+  top: 30px;
+  text-align: center;
+  margin: auto;
+  background-color: #ffbb88;
+  border: 5px solid #ff5555;
+}
+
+#results {
+  position: relative;
+  top: 420px;
+  left: 60px;
+  font-family: Pangolin, cursive;
+  font-size: 50px;
+  color: #ff5555;
+  text-align: center;
+  margin: auto;
+}
+#settings {
+  position: relative;
+  border-spacing: 5px;
+  left: 0px;
+  top: 100px;
+  text-align: left;
+  width: 265px;
+}
+td {
+  font-family: Pangolin, cursive;
+  color: #ff5555;
+  text-align: right;
+  width: ;
+}
+
+#playerchoice {
+  width: 45px;
+}
+#aichoice {
+  width: 80px;
+}
+#buttons {
+  width: 40px;
+}
+/* slider - example from W3Schools */
+#slider1 {
+  position: relative;
+  top: 270px;
+  left: 50px;
+  padding: 50px;
+  text-align: right;
+  margin: auto;
+  font-family: Pangolin, cursive;
+  font-size: 30px
+}
+
+img {
+  vertical-align: text-top;
+  height: 160px;
+  width: 160px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffff88;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ff5555;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ffbb88;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ffbb88;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-family: Pangolin, cursive;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: lightgreen;
+  background-color: #ff5555;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #ffbb88;
+}
+
+.button:hover {background-color: #ff5555}
+
+.button:active {
+  background-color: #ffbb88;
+  box-shadow: 0 5px lightgreen;
+  transform: translateY(4px);
+  color: darkgreen;
+}
+#reset {
+  position: relative;
+  top: 100px;
+  left: -80px;
+
+}
