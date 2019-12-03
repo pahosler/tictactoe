@@ -131,9 +131,9 @@ var board = Game.create({
     },
     xyObjMap: [[0, 3, 6], [1, 4, 7], [2, 5, 8]], // human board position from mouse x,y
     mouseClick: 0,
-    xImage: "images/x.gif",
-    oImage: "images/o.gif",
-    catsImg: "images/simonscat.gif",
+    xImage: "../images/x.gif",
+    oImage: "../images/o.gif",
+    catsImg: "../images/simonscat.gif",
     dumbAI: function() {
       return Math.floor(Math.random(10) * 8);
     }
